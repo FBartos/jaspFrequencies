@@ -29,10 +29,10 @@ Form
 		marginBetweenVariablesLists	: 15
 
 		AvailableVariablesList	{ name: "allVariablesList" }
-		AssignedVariablesList	{ name: "y1";	title: qsTr("Successes Group 1");	singleVariable: true;	allowedColumns: ["scale"] }
-		AssignedVariablesList	{ name: "n1";	title: qsTr("Sample Size Group 1");	singleVariable: true;	allowedColumns: ["scale"] }
-		AssignedVariablesList	{ name: "y2";	title: qsTr("Successes Group 2");	singleVariable: true;	allowedColumns: ["scale"] }
-		AssignedVariablesList	{ name: "n2";	title: qsTr("Sample Size Group 2");	singleVariable: true;	allowedColumns: ["scale"] }
+		AssignedVariablesList	{ name: "y1";	title: qsTr("Successes Group 1");	singleVariable: true;	allowedColumns: ["scale"];	minNumericLevels: 1 }
+		AssignedVariablesList	{ name: "n1";	title: qsTr("Sample Size Group 1");	singleVariable: true;	allowedColumns: ["scale"];	minNumericLevels: 1 }
+		AssignedVariablesList	{ name: "y2";	title: qsTr("Successes Group 2");	singleVariable: true;	allowedColumns: ["scale"];	minNumericLevels: 1 }
+		AssignedVariablesList	{ name: "n2";	title: qsTr("Sample Size Group 2");	singleVariable: true;	allowedColumns: ["scale"];	minNumericLevels: 1 }
 	}
 
 	ColumnLayout
