@@ -34,10 +34,10 @@ Form
 	VariablesForm
 	{
 		AvailableVariablesList { name: "allVariablesList" }
-		AssignedVariablesList { name: "rows";		title: qsTr("Rows");	allowedColumns: ["nominal"] }
-		AssignedVariablesList { name: "columns";	title: qsTr("Columns");	allowedColumns: ["nominal"] }
-		AssignedVariablesList { name: "counts";		title: qsTr("Counts");	allowedColumns: ["scale"]; singleVariable: true }
-		AssignedVariablesList { name: "layers";		title: qsTr("Layers");	allowedColumns: ["nominal"]; listViewType: JASP.Layers; preferredHeight: 120 }
+		AssignedVariablesList { name: "rows";		title: qsTr("Rows");	allowedColumns: ["nominal"];	maxLevels: 32 }
+		AssignedVariablesList { name: "columns";	title: qsTr("Columns");	allowedColumns: ["nominal"];	maxLevels: 32 }
+		AssignedVariablesList { name: "counts";		title: qsTr("Counts");	allowedColumns: ["scale"];		minNumericLevels: 1; singleVariable: true }
+		AssignedVariablesList { name: "layers";		title: qsTr("Layers");	allowedColumns: ["nominal"];	maxLevels: 32; listViewType: JASP.Layers; preferredHeight: 120 }
 	}
 
 	Section
